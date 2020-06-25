@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+}
+
+#homePage.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#homePage.container .doodle {
+  width: 300px;
+}
+
+#homePage .searchBox {
+  margin-top: 15px;
+  display: flex;
+}
+
+#homePage .searchBox input {
+  height: 30px;
+  width: 500px;
+  border: 0;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgb(172, 172, 172);
+  position: relative;
+  left: 10px;
+}
+
+#homePage .searchBox input:focus {
+  outline: 0;
+}
+
+#homePage .searchBox input:hover {
+  box-shadow: 0px 0px 10px #8080808f;
+}
+
+#homePage .searchBox svg {
+  width: 30px;
+  position: relative;
+  left: -30px;
+}
+
+#homePage button {
+  margin-top: 15px;
+  width: 150px;
+  padding: 10px;
+
+ 
+  border: 0;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: rgb(70, 70, 70);
+  transition-duration: 0.3s;
+}
+
+#homePage button:focus {
+  outline: 0;
+}
+
+#homePage button:hover {
+  border: 1px solid grey;
+}
+
+@media only screen and (max-width: 600px) {
+  #homePage.container .doodle {
+    width: 180px;
+  }
+  #homePage .searchBox input {
+    width: 185px;
+  }
+}
